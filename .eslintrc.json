@@ -1,0 +1,32 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint", "prettier"],
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:import/typescript",
+		"plugin:promise/recommended",
+		"plugin:prettier/recommended"
+	],
+	"rules": {
+		"handle-callback-err": "off",
+		"max-nested-callbacks": ["error", { "max": 4 }],
+		"max-statements-per-line": ["error", { "max": 2 }],
+		"no-console": "off",
+		"no-empty-function": "error",
+		"no-lonely-if": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"prettier/prettier": "warn",
+		"spaced-comment": "error",
+		"yoda": "error",
+		"@typescript-eslint/no-non-null-assertion": "off"
+	}
+}

@@ -1,0 +1,14 @@
+# ignore node_modules
+node_modules/
+
+# ignore out
+dist/
+
+# ignore .env
+.env
+
+# ignore .vscode
+.vscode/
+
+# ignore log files
+*.log

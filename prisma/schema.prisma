@@ -1,0 +1,58 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+    previewFeatures = ["referentialActions"]
+}
+
+model User {
+    id                   String          @id
+    robloxAccounts       BigInt[]
+    defaultRobloxAccount BigInt?
+    guildMemberships     GuildMember[]
+}
+
+model Guild {
+    id            String  @id
+    prefix        String?
+    linkedGroup   BigInt?
+
+    guildMembers        GuildMember[]
+    permissionOverrides PermissionOverride[]
+}
+
+model GuildMember {
+    selectedAccount BigInt?
+
+    user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+    userId  String
+    guild   Guild  @relation(fields: [guildId], references: [id], onDelete: Cascade)
+    guildId String
+
+    @@id([guildId, userId])
+}
+
+model PermissionOverride {
+    id      String
+    type    PermissionOverrideType   @default(ROLE)
+    command String
+    action  PermissionOverrideAction
+
+    guild   Guild  @relation(fields: [guildId], references: [id], onDelete: Cascade)
+    guildId String
+
+    @@id([id, type, command])
+}
+
+enum PermissionOverrideType {
+    USER
+    ROLE
+}
+
+enum PermissionOverrideAction {
+    ALLOW
+    DENY
+}
