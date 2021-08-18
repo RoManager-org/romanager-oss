@@ -17,7 +17,8 @@ Requirements:
 
 1. Populate the `.env.example` file and rename it to `.env`
 2. Install dependencies using `npm i --legacy-peer-deps`
-3. Start the bot with `node .`
+3. Run `npx tsc` to compile the TypeScript code to JavaScript
+4. Start the bot with `node .`
 
 ## Public version
 [Add the public verison of RoManager](https://discord.com/oauth2/authorize?client_id=738035113815834746&permissions=540142656&scope=bot%20applications.commands)
