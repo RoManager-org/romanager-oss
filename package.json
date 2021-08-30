@@ -32,7 +32,7 @@
 		"start": "node ."
 	},
 	"dependencies": {
-		"@prisma/client": "^2.29.1",
+		"@prisma/client": "^2.30.0",
 		"bloxy": "^5.7.3",
 		"discord-akairo": "github:discord-akairo/discord-akairo",
 		"discord.js": "^13.1.0",
