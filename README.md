@@ -7,6 +7,9 @@ RoManager is a free, feature-rich Discord-to-Roblox bot. This repository (https:
 ## Setup
 ~~Instructions to start your own instance of RoManager are in the wiki: https://github.com/RoManager-org/romanager-oss/wiki.~~ (not yet complete)
 
+## Security
+Found a vulnerability or a security issue? See our [Security policy](https://github.com/RoManager-org/romanager-oss/blob/main/SECURITY.md). 
+
 ## Contribute
 We accept any kind of contributions! They will also be added to the public version of RoManager.
 
