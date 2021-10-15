@@ -4,11 +4,14 @@
 
 RoManager is a free, feature-rich Discord-to-Roblox bot. This repository (https://github.com/RoManager-org/romanager-oss) is the self-hosted version.
 
+## Release Schedule
+The self-hosted version will catch up with the `main` branch of the upstream bot every month. We recommend you update the bot (`git pull`) every now and then.
+
 ## Setup
 ~~Instructions to start your own instance of RoManager are in the wiki: https://github.com/RoManager-org/romanager-oss/wiki.~~ (not yet complete)
 
 ## Security
-Found a vulnerability or a security issue? See our [Security policy](https://github.com/RoManager-org/romanager-oss/blob/main/SECURITY.md). 
+Found a vulnerability or a security issue? See our [security policy](https://github.com/RoManager-org/romanager-oss/blob/main/SECURITY.md). 
 
 ## Contribute
 We accept any kind of contributions! They will also be added to the public version of RoManager.
